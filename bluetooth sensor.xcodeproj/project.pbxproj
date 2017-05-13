@@ -12,7 +12,27 @@
 		3A09D8BD1EC3B94900108BDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A09D8BB1EC3B94900108BDA /* Main.storyboard */; };
 		3A09D8BF1EC3B94900108BDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A09D8BE1EC3B94900108BDA /* Assets.xcassets */; };
 		3A09D8C21EC3B94900108BDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A09D8C01EC3B94900108BDA /* LaunchScreen.storyboard */; };
+		3A09D8CA1EC3BA8300108BDA /* AutomatCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A09D8C91EC3BA8300108BDA /* AutomatCommunication.swift */; };
+		3A09D8CF1EC3C25800108BDA /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A09D8CE1EC3C25800108BDA /* CoreBluetooth.framework */; };
+		3A0EBF851EC4D42A00306C08 /* NeueLabsAutomat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0EBF811EC498A100306C08 /* NeueLabsAutomat.framework */; };
+		3A0EBF861EC4D47900306C08 /* NeueLabsAutomat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0EBF811EC498A100306C08 /* NeueLabsAutomat.framework */; };
+		3A0EBF871EC4D47900306C08 /* NeueLabsAutomat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0EBF811EC498A100306C08 /* NeueLabsAutomat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A55FC541EC65AF9006C38F9 /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A55FC531EC65AF9006C38F9 /* DataPoint.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3A0EBF881EC4D47900306C08 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3A0EBF871EC4D47900306C08 /* NeueLabsAutomat.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3A09D8B41EC3B94800108BDA /* bluetooth sensor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bluetooth sensor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +42,10 @@
 		3A09D8BE1EC3B94900108BDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A09D8C11EC3B94900108BDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A09D8C31EC3B94A00108BDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A09D8C91EC3BA8300108BDA /* AutomatCommunication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutomatCommunication.swift; sourceTree = "<group>"; };
+		3A09D8CE1EC3C25800108BDA /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		3A0EBF811EC498A100306C08 /* NeueLabsAutomat.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NeueLabsAutomat.framework; path = System/Library/Frameworks/NeueLabsAutomat.framework; sourceTree = SDKROOT; };
+		3A55FC531EC65AF9006C38F9 /* DataPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A0EBF851EC4D42A00306C08 /* NeueLabsAutomat.framework in Frameworks */,
+				3A0EBF861EC4D47900306C08 /* NeueLabsAutomat.framework in Frameworks */,
+				3A09D8CF1EC3C25800108BDA /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +67,7 @@
 			children = (
 				3A09D8B61EC3B94800108BDA /* bluetooth sensor */,
 				3A09D8B51EC3B94800108BDA /* Products */,
+				3A09D8CD1EC3C25800108BDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +84,23 @@
 			children = (
 				3A09D8B71EC3B94800108BDA /* AppDelegate.swift */,
 				3A09D8B91EC3B94800108BDA /* ViewController.swift */,
+				3A55FC531EC65AF9006C38F9 /* DataPoint.swift */,
+				3A09D8C91EC3BA8300108BDA /* AutomatCommunication.swift */,
 				3A09D8BB1EC3B94900108BDA /* Main.storyboard */,
 				3A09D8BE1EC3B94900108BDA /* Assets.xcassets */,
 				3A09D8C01EC3B94900108BDA /* LaunchScreen.storyboard */,
 				3A09D8C31EC3B94A00108BDA /* Info.plist */,
 			);
 			path = "bluetooth sensor";
+			sourceTree = "<group>";
+		};
+		3A09D8CD1EC3C25800108BDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A0EBF811EC498A100306C08 /* NeueLabsAutomat.framework */,
+				3A09D8CE1EC3C25800108BDA /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +113,7 @@
 				3A09D8B01EC3B94800108BDA /* Sources */,
 				3A09D8B11EC3B94800108BDA /* Frameworks */,
 				3A09D8B21EC3B94800108BDA /* Resources */,
+				3A0EBF881EC4D47900306C08 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +136,7 @@
 				TargetAttributes = {
 					3A09D8B31EC3B94800108BDA = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = C9Q2M789GC;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -138,6 +179,8 @@
 			files = (
 				3A09D8BA1EC3B94800108BDA /* ViewController.swift in Sources */,
 				3A09D8B81EC3B94800108BDA /* AppDelegate.swift in Sources */,
+				3A55FC541EC65AF9006C38F9 /* DataPoint.swift in Sources */,
+				3A09D8CA1EC3BA8300108BDA /* AutomatCommunication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +305,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C9Q2M789GC;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "bluetooth sensor/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "antonje.bluetooth-sensor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,7 +320,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C9Q2M789GC;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "bluetooth sensor/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "antonje.bluetooth-sensor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -301,6 +350,7 @@
 				3A09D8C81EC3B94A00108BDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
